@@ -1,5 +1,6 @@
 class Conta
-   attr_accessor :numero,:titular,:saldo 
+   attr_reader :numero, :titular
+   attr_accessor :saldo
    def initialize(numero, titular, saldo)
     @numero = numero
     @titular = titular
