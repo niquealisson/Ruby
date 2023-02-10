@@ -1,5 +1,4 @@
 require_relative 'titular'
-
 class Conta
    attr_accessor :saldo
    attr_reader :nome ,:numero
