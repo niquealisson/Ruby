@@ -3,10 +3,10 @@ class Conta
    attr_accessor :saldo
    attr_reader :nome ,:numero
 
-   def initialize(numero, saldo, nome, documento)
+   def initialize(numero, titular, saldo)
     @numero = numero
     @saldo = saldo
-    @titular = Titular.new(nome,documento)
+    @titular = titular
    end 
 
    def sacar(valor)
